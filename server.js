@@ -8,7 +8,8 @@ var config = require("./webpack.config");
 var app = express();
 var compiler = webpack(config);
 
-var serverPort = process.env.PORT || 3000;
+var SERVER_PORT = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var SERVER_IP = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1"
 
 app.use(require("webpack-dev-middleware")(compiler, {
   noInfo: true,
@@ -21,7 +22,7 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.listen(serverPort, "localhost", function (err) {
+app.listen(SERVER_PORT, SERVER_IP, function (err) {
   if (err) {
     console.log(err);
     return;
