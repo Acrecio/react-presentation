@@ -32,5 +32,5 @@ app.listen(SERVER_PORT, SERVER_IP, function (err) {
     return;
   }
 
-  console.log("Listening at http://localhost:" + serverPort);
+  console.log("Listening at http://" + SERVER_IP + ":" + SERVER_PORT);
 });
