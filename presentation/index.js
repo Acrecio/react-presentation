@@ -68,24 +68,24 @@ export default class Presentation extends React.Component {
             </Heading>
             <Markdown>
             {`
-- **Javascript** natif (getElementById(“id”)) :
-Model View Controller ensemble
-- **JQuery** ($(“#id)) :
-Model View Controller ensemble
-- **BackboneJS** (view.$el) :
-Model View only
-- **AngularJS** (angular.element(“id”)) :
-Model View - View Model (stupide)
-- **NodeJS** (javascript server) :
-Model View Controller
-- **ReactJS** <Element> :
+- **Javascript** natif *getElementById(“id”)* :
 View only
+- **JQuery** *$(“#id”)* :
+View only
+- **BackboneJS** *view.$el* :
+Model View only
+- **AngularJS** *angular.element(“id”)* :
+Model View - View Model
+- **ReactJS** *<Element>* :
+Composing views
+- **NodeJS** *javascript server* :
+Model View Controller
             `}
             </Markdown>
           </Slide>
           <Slide transition={["slide", "spin"]} bgColor="primary">
             <Heading size={4} caps textColor="secondary">
-              What is ReactJS
+              Qu'est ce que ReactJS
             </Heading>
             <Markdown>
             {`
@@ -99,14 +99,14 @@ View only
           </Slide>
           <Slide transition={["slide", "spin"]} bgColor="primary">
             <Heading size={4} caps textColor="secondary">
-              What is not ReactJS
+              Ce que n'est pas ReactJS
             </Heading>
             <Markdown>
             {`
-- Un framework
+- Un framework != ~~AngularJS~~
 - Orienté configuration / tags
 - Une architecture prédéfinie
-- Une vieille librairie (très stable)
+- Une librairie très stable
             `}
             </Markdown>
           </Slide>
@@ -116,9 +116,10 @@ View only
             </Heading>
             <Markdown>
             {`
-- Traitements **asynchrones** pour ne pas bloquer le navigateur
-- Attacher des **listeners** aux évènements (Flash)
-- **Single Thread** pour ne pas se prendre la tête avec la synchronisation
+- Balises et attributs **HTML**
+- Attacher des **listeners** aux évènements
+- **Single Thread** enfin presque
+- **Asynchrone** queue event pour ne pas bloquer le navigateur
             `}
             </Markdown>
           </Slide>
@@ -132,7 +133,7 @@ View only
 - DOM virtuel permet d’**optimiser le rendu DOM**
 - Permet le Hot Reloading
 - **Facilite les tests**
-- Couche d’abstraction qui peut ne pas être nécessaire pour des petits projets
+- Couche d’abstraction **React Native**
             `}
             </Markdown>
           </Slide>
@@ -159,6 +160,14 @@ View only
                 <List>
                   <ListItem>
                     <strong>getInitialState</strong> : define defaults
+                  </ListItem>
+                </List>
+              </ListItem>
+              <ListItem>
+                <Text textColor="secondary">Context (Contexte partagé)</Text>
+                <List>
+                  <ListItem>
+                    <strong>getChildContext</strong> : define defaults
                   </ListItem>
                 </List>
               </ListItem>
@@ -299,7 +308,7 @@ With JSX
           </Slide>
           <Slide transition={["slide", "spin"]} bgColor="primary">
             <Heading size={4} caps textColor="secondary">
-              Testings
+              Les Tests
             </Heading>
             <List>
               <ListItem>
