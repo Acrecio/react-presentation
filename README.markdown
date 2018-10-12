@@ -1,21 +1,13 @@
-# Spectacle Boilerplate
+# ReactJS Presentation
 
-## Reference
+## Introduction
 
-The Spectacle core API is available at [https://github.com/FormidableLabs/spectacle/blob/master/README.markdown](https://github.com/FormidableLabs/spectacle/blob/master/README.markdown).
+Ceci est une présentation que j'ai réalisé pour présenter à mon CTO quels sont les avantages d'utiliser un framework orienté composants avec un DOM virtuel tel que ReactJS.
 
-## Development
+## Prévisualisation
 
-After downloading the boilerplate, your first order of business is to open terminal and run `npm install`
+Vous pouvez avoir un aperçu de la présentation ici : [screencapture](preview/screencapture.png).
 
-Next, run `rm -R .git` to remove the existing version control.
+## Fait avec Spectacle
 
-Then, to start up the local server, run `npm start`
-
-Open a browser and hit [http://localhost:3000](http://localhost:3000), and we are ready to roll
-
-## Build & Deployment
-
-Building the dist version of the project is as easy as running `npm run build`
-
-If you want to deploy the slideshow to surge, run `npm run deploy`
+Cette présentation a été fait grâce au framework Spectacle : [https://github.com/FormidableLabs/spectacle/blob/master/README.markdown](https://github.com/FormidableLabs/spectacle/blob/master/README.markdown).
